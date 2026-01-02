@@ -75,13 +75,16 @@ export default function Skills() {
           </div>
           <p className="leading-relaxed text-base">
             I build production UIs using
-            <span className="text-accent"> Svelte</span> and
             <span className="text-accent"> React</span>, with experience working
-            in <span className="text-accent"> Next.js</span> based projects. I
-            work across server-side rendering, BFF-style data access, and
-            frontend concerns such as hydration, caching, routing, and state
-            boundaries, enabling frontend and backend layers to integrate
-            cleanly and scale without unnecessary coupling.
+            in
+            <span className="text-accent"> Next.js</span> based projects.
+            Earlier in my career, I led and maintained large-scale
+            <span className="text-accent"> Angular</span> applications in
+            enterprise environments, which shaped how I think about component
+            architecture, state boundaries, and long-term maintainability. I
+            work across server-side rendering, data access layers, and frontend
+            concerns such as hydration, caching, routing, and state management,
+            enabling systems to scale without unnecessary coupling.
           </p>
         </div>
 
