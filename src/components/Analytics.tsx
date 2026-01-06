@@ -7,7 +7,7 @@ export function Analytics() {
   const pathname = usePathname();
 
   useEffect(() => {
-    fetch("https://portfolio-api.codedbytravis.workers.dev/events", {
+    fetch("/api/analytics", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
