@@ -1,25 +1,6 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import { Server, Layout, BrainCircuit } from "lucide-react";
 
 export default function Skills() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) setIsVisible(true);
-      },
-      { threshold: 0.3 }
-    );
-
-    const element = document.getElementById("skills");
-    if (element) observer.observe(element);
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section id="skills" className="min-h-screen py-20 section">
       <h2 className="text-4xl md:text-5xl font-bold mb-6">Technical Skills</h2>
@@ -46,11 +27,7 @@ export default function Skills() {
         </p>
       </div>
 
-      <div
-        className={`grid md:grid-cols-3 gap-8 mt-12 transition-opacity duration-700 ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
-      >
+      <div className="grid md:grid-cols-3 gap-8 mt-12">
         <div className="rounded-lg p-6 bg-card/20">
           <div className="flex items-center space-x-3 mb-4">
             <Server className="text-neon-cyan w-6 h-6" />

@@ -1,6 +1,6 @@
 "use client";
 
-import Header from "@/components/Header";
+import { DevName } from "@/components/DevName";
 import { ProjectHeader } from "@/components/ProjectHeader";
 import { projects } from "@/lib/data";
 import { useParams } from "next/navigation";
@@ -19,7 +19,11 @@ export default function ProjectPage() {
 
   return (
     <>
-      <Header hideLinks={true} />
+      <header className="fixed top-0 left-0 right-0 z-50 bg-sidebar backdrop-blur-md">
+        <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+          <DevName />
+        </nav>
+      </header>
 
       <div className="pt-10">
         <ProjectHeader
@@ -30,12 +34,10 @@ export default function ProjectPage() {
       </div>
 
       <section className="section space-y-16 text-[var(--color-text-light)]">
-        {/* Title */}
         <h1 className="text-6xl md:text-6xl font-bold text-lg">
           {project.title}
         </h1>
 
-        {/* About */}
         <div>
           <h2 className="text-4xl font-semibold mb-4">About the Project</h2>
           {project.description.about.map((para, i) => (
@@ -47,8 +49,6 @@ export default function ProjectPage() {
             </p>
           ))}
         </div>
-
-        {/* How It Was Built */}
         <div>
           <h2 className="text-4xl font-semibold mb-4">How It Was Built</h2>
           {project.description.howItWasBuilt.map((para, i) => (
@@ -60,8 +60,6 @@ export default function ProjectPage() {
             </p>
           ))}
         </div>
-
-        {/* Key Features */}
         <div>
           <h2 className="text-4xl font-semibold mb-4">Key Features</h2>
           <ul className="list-disc list-inside space-y-2 text-lg text-[var(--color-text-light)]/90">
@@ -84,7 +82,6 @@ export default function ProjectPage() {
           </div>
         )}
 
-        {/* Buttons */}
         <div className="mt-10 flex flex-wrap gap-4">
           {project.live && (
             <a
