@@ -7,9 +7,10 @@ export default function Skills() {
       <div className="space-y-6 text-lg leading-relaxed">
         <p>
           I&apos;m a product focused software engineer who builds features with
-          intent. My background in long lived, large scale systems taught me how
-          architecture, tradeoffs, and constraints actually show up in real
-          products.
+          intent. My background in long lived, large scale systems — from
+          enterprise platforms serving 10,000+ customers to mission critical
+          mobile apps — taught me how architecture, tradeoffs, and constraints
+          actually show up in real products.
         </p>
 
         <p>
@@ -35,13 +36,12 @@ export default function Skills() {
           </div>
           <p className="leading-relaxed text-base">
             I design and maintain backend services using
-            <span className="text-accent"> Node.js</span>,
-            <span className="text-accent"> TypeScript</span>,
-            <span className="text-accent"> NestJS</span>, and
-            <span className="text-accent"> Express</span>. I work with databases
-            like PostgreSQL, MongoDB, and SQL Server, focusing on clean
-            architecture, modular code, strong typing, and patterns that scale
-            across teams.
+            <span className="text-accent"> Node.js</span>, TypeScript, NestJS,
+            and Express, as well as
+            <span className="text-accent"> .NET</span> and
+            <span className="text-accent"> C#</span>. I work with databases like
+            PostgreSQL, MongoDB, and SQL Server, focusing on clean architecture,
+            modular code, strong typing, and patterns that scale across teams.
           </p>
         </div>
 
@@ -51,17 +51,13 @@ export default function Skills() {
             <h3 className="text-xl font-semibold text-neon-pink">Frontend</h3>
           </div>
           <p className="leading-relaxed text-base">
-            I build production UIs using
-            <span className="text-accent"> React</span>, with experience working
-            in
-            <span className="text-accent"> Next.js</span> based projects.
-            Earlier in my career, I led and maintained large-scale
-            <span className="text-accent"> Angular</span> applications in
-            enterprise environments, which shaped how I think about component
-            architecture, state boundaries, and long-term maintainability. I
-            work across server-side rendering, data access layers, and frontend
-            concerns such as hydration, caching, routing, and state management,
-            enabling systems to scale without unnecessary coupling.
+            I build production UIs using{" "}
+            <span className="text-accent">React</span> and{" "}
+            <span className="text-accent">Angular</span>, with experience in
+            Next.js based projects. I've led large-scale Angular applications in
+            enterprise environments and now work across both ecosystems,
+            focusing on component architecture, state management, and
+            performance optimization.
           </p>
         </div>
 

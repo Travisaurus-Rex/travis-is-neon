@@ -7,19 +7,19 @@ export default function About() {
         </div>
 
         <h1 className="text-5xl md:text-6xl font-bold leading-tight text-balance">
-          I build software that feels
-          <span className="text-accent"> fast</span>,
-          <span className="text-accent"> focused</span>, and{" "}
-          <span className="text-accent">human</span>.
+          I build software that
+          <span className="text-accent"> scales</span>,
+          <span className="text-accent"> ships</span>, and{" "}
+          <span className="text-accent">lasts</span>.
         </h1>
 
         <div className="mt-6 h-px w-24 bg-white" />
 
         <p className="mt-8 max-w-3xl text-lg leading-relaxed text-foreground/80">
-          I&apos;m a full stack software engineer experienced in building and
-          maintaining production web applications across frontend and backend. I
-          work comfortably across UI, APIs, databases, and integrations, with a
-          focus on clarity, performance, and long-term maintainability.
+          I&apos;m a senior full stack engineer with 6 years building production
+          systems for enterprise and consumer platforms. I work across frontend,
+          backend, databases, and infrastructure—focusing on architecture that
+          adapts as products grow and teams evolve.
         </p>
       </div>
     </section>

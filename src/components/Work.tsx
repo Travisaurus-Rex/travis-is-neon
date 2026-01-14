@@ -1,4 +1,3 @@
-// src/components/Work.tsx
 export default function Work() {
   const jobs = [
     {
@@ -11,7 +10,7 @@ export default function Work() {
         "Delivered full-stack features across Angular and React applications, owning UI behavior, API integration, and backend logic used in daily workflows.",
         "Improved backend services and control-plane integrations, strengthening reliability, performance, and observability across distributed systems.",
         "Worked cross-functionally with design, operations, and platform teams to diagnose complex production issues and streamline mission-critical workflows.",
-        "Helped maintain architectural consistency across large, evolving codebases, ensuring scalable patterns for frontend, APIs, and infrastructure-adjacent systems."
+        "Helped maintain architectural consistency across large, evolving codebases, ensuring scalable patterns for frontend, APIs, and infrastructure-adjacent systems.",
       ],
       tech: ["Angular", "TypeScript", ".NET", "Node", "React", "GraphQL"],
     },
@@ -25,9 +24,9 @@ export default function Work() {
         "Helped design and deliver a new B2C e-commerce experience, shipping multiple iterations and improving reliability, customer flows, and system performance.",
         "Built internal operational tools used daily by 1,000+ employees, supporting essential business functions across logistics, inventory, ordering, and customer service.",
         "Contributed to architecture and technical direction, designing scalable backend patterns and frontend experiences used across multiple high-traffic systems.",
-        "Mentored developers on maintainability, scalable backend patterns, debugging practices, and modern TypeScript development."
+        "Mentored developers on maintainability, scalable backend patterns, debugging practices, and modern TypeScript development.",
       ],
-      tech: ["Angular", "Ionic", "TypeScript", ".NET", "Node", "SQL Server",],
+      tech: ["Angular", "Ionic", "TypeScript", ".NET", "Node", "SQL Server"],
     },
     {
       title: "Full Stack Developer",
@@ -56,14 +55,12 @@ export default function Work() {
       <h2 className="text-4xl md:text-5xl font-bold mb-4">Work Experience</h2>
       <div className="space-y-12">
         {jobs.map((job, idx) => (
-          <div key={idx} className="grid grid-cols-6 gap-2 md:gap-6">
-
+          <div key={idx} className="grid grid-cols-8 gap-2 md:gap-6">
             <div className="col-span-2 max-md:col-span-6 text-2xl md:text-sm font-mono uppercase tracking-wide">
               {job.range}
             </div>
 
-
-            <div className="col-span-4 max-md:col-span-6 space-y-4">
+            <div className="col-span-6 max-md:col-span-6 space-y-4">
               <h3 className="font-semibold text-lg">
                 {job.title} ·{" "}
                 {job.link ? (
@@ -82,7 +79,9 @@ export default function Work() {
 
               <ul className="list-disc list-inside space-y-1">
                 {job.bullets.map((b, i) => (
-                  <li key={i} className="list-outside mb-3 max-md:ml-6">{b}</li>
+                  <li key={i} className="list-outside mb-3 max-md:ml-6">
+                    {b}
+                  </li>
                 ))}
               </ul>
 
