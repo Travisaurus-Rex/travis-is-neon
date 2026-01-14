@@ -54,10 +54,10 @@ export default function Skills() {
             I build production UIs using{" "}
             <span className="text-accent">React</span> and{" "}
             <span className="text-accent">Angular</span>, with experience in
-            Next.js based projects. I've led large-scale Angular applications in
-            enterprise environments and now work across both ecosystems,
-            focusing on component architecture, state management, and
-            performance optimization.
+            Next.js based projects. I&apos;ve led large-scale Angular
+            applications in enterprise environments and now work across both
+            ecosystems, focusing on component architecture, state management,
+            and performance optimization.
           </p>
         </div>
 
