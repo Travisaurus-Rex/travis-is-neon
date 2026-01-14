@@ -65,8 +65,7 @@ export const projects: Project[] = [
     slug: "bazaar",
     live: "",
     github: {
-      monorepo:
-        "https://github.com/Travisaurus-Rex/bazaar-api/tree/nest-migration",
+      monorepo: "https://github.com/Travisaurus-Rex/bazaar-api",
     },
   },
   {
