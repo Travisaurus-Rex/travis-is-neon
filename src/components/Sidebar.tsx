@@ -8,8 +8,10 @@ export default function Sidebar() {
   return (
     <>
       <aside className="sidebar hidden lg:flex lg:flex-none lg:w-[22rem] sticky top-0 h-screen flex-col justify-between px-8 py-16 bg-sidebar">
-        <Logo />
-        <ThemeToggle />
+        <div>
+          <Logo />
+          <ThemeToggle />
+        </div>
         <Navbar />
         <LinkShelf />
       </aside>
