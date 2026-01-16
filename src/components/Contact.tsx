@@ -135,7 +135,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="popout popout-btn text-xl font-bold w-full border px-8 py-3 rounded-lg flex items-center justify-center space-x-2 cursor-pointer"
+                    className="popout popout-btn text-xl font-bold w-full border px-8 py-3! rounded-lg flex items-center justify-center space-x-2 cursor-pointer"
                   >
                     {status === "loading" ? (
                       <LoaderCircle size={18} className="animate-spin" />

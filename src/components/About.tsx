@@ -15,7 +15,7 @@ export default function About() {
 
         <div className="mt-6 h-0.5 w-48 bg-[var(--color-text)]" />
 
-        <p className="mt-8 max-w-4xl text-lg leading-relaxed text-foreground/80">
+        <p className="mt-8 max-w-4xl text-xl leading-relaxed text-foreground/80">
           I&apos;m a senior full stack engineer with 6 years building production
           systems for enterprise and consumer platforms. I work across frontend,
           backend, databases, and infrastructure — focusing on architecture that
