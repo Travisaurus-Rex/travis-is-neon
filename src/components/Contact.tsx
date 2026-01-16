@@ -88,7 +88,7 @@ export default function Contact() {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         required
-                        className="w-full px-4 py-3 rounded-lg border outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-lg border outline-none transition-all contact-field"
                       />
                     </div>
                     <div>
@@ -102,8 +102,9 @@ export default function Contact() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
-                        className="w-full px-4 py-3 rounded-lg border outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-lg border outline-none transition-all contact-field"
                       />
+                      <p className="contact-error">Email address is required</p>
                     </div>
                   </div>
 
@@ -118,7 +119,7 @@ export default function Contact() {
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       required
-                      className="w-full px-4 py-3 rounded-lg border outline-none transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-lg border outline-none transition-all resize-none contact-field"
                     ></textarea>
                   </div>
 
@@ -134,7 +135,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="toggle-btn w-full border px-8 py-3 rounded-lg flex items-center justify-center space-x-2 cursor-pointer"
+                    className="popout popout-btn text-xl font-bold w-full border px-8 py-3 rounded-lg flex items-center justify-center space-x-2 cursor-pointer"
                   >
                     {status === "loading" ? (
                       <LoaderCircle size={18} className="animate-spin" />

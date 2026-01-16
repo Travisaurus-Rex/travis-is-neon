@@ -1,5 +1,4 @@
-'use client';
-import Image from 'next/image';
+import Image from "next/image";
 
 type ProjectHeroProps = {
   desktopImg?: string;
@@ -7,7 +6,11 @@ type ProjectHeroProps = {
   alt: string;
 };
 
-export function ProjectHeader({ desktopImg, mobileImg, alt }: ProjectHeroProps) {
+export function ProjectHeader({
+  desktopImg,
+  mobileImg,
+  alt,
+}: ProjectHeroProps) {
   if (!desktopImg && !mobileImg) return null;
 
   return (
@@ -21,7 +24,7 @@ export function ProjectHeader({ desktopImg, mobileImg, alt }: ProjectHeroProps) 
               width={1200}
               height={700}
               src={desktopImg}
-              alt={alt || 'Desktop Screenshot'}
+              alt={alt || "Desktop Screenshot"}
               className="w-full rounded-lg shadow-xl"
             />
           )}
@@ -31,11 +34,11 @@ export function ProjectHeader({ desktopImg, mobileImg, alt }: ProjectHeroProps) 
               width={400}
               height={800}
               src={mobileImg}
-              alt={alt || 'Mobile Screenshot'}
+              alt={alt || "Mobile Screenshot"}
               className="absolute bottom-[-2rem] right-[-2rem] w-1/4 min-w-[140px] rounded-lg shadow-xl border border-[var(--color-primary)]/20 transform hover:scale-105 transition-transform duration-500"
               style={{
                 boxShadow:
-                  '0 8px 24px rgba(0,0,0,0.8), 0 0 30px rgba(255,255,255,0.08)',
+                  "0 8px 24px rgba(0,0,0,0.8), 0 0 30px rgba(255,255,255,0.08)",
               }}
             />
           )}
@@ -45,4 +48,3 @@ export function ProjectHeader({ desktopImg, mobileImg, alt }: ProjectHeroProps) 
     </div>
   );
 }
-

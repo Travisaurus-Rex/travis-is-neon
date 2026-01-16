@@ -20,14 +20,14 @@ export default function ProjectPage() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-sidebar backdrop-blur-md">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-sidebar backdrop-blur-md border border-b-2 border-black">
         <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <DevName />
           <ThemeToggle />
         </nav>
       </header>
 
-      <div className="pt-10">
+      <div className="pt-18">
         <ProjectHeader
           desktopImg={project.images.mainDesktop}
           mobileImg={project.images.mainMobile}
@@ -68,10 +68,7 @@ export default function ProjectPage() {
         {project.tags?.length > 0 && (
           <div className="flex flex-wrap gap-2 mb-4">
             {project.tags.map((tag) => (
-              <span
-                key={tag}
-                className="px-3 py-1 text-md rounded-full text-secondary border"
-              >
+              <span key={tag} className="tag tag-lg">
                 {tag}
               </span>
             ))}
@@ -83,7 +80,7 @@ export default function ProjectPage() {
             <a
               target="_blank"
               href={project.live}
-              className="toggle-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+              className="popout popout-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
             >
               VISIT SITE
             </a>
@@ -93,7 +90,7 @@ export default function ProjectPage() {
             <a
               target="_blank"
               href={project.github.monorepo}
-              className="toggle-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+              className="popout popout-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
             >
               GITHUB
             </a>
@@ -105,7 +102,7 @@ export default function ProjectPage() {
                 <a
                   target="_blank"
                   href={project.github.frontend}
-                  className="toggle-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+                  className="popout popout-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
                 >
                   FRONTEND
                 </a>
@@ -114,7 +111,7 @@ export default function ProjectPage() {
                 <a
                   target="_blank"
                   href={project.github.backend}
-                  className="toggle-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+                  className="popout popout-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
                 >
                   BACKEND
                 </a>
@@ -126,7 +123,7 @@ export default function ProjectPage() {
             <a
               target="_blank"
               href={project.android}
-              className="toggle-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+              className="popout popout-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
             >
               GOOGLE PLAY
             </a>
@@ -136,7 +133,7 @@ export default function ProjectPage() {
             <a
               target="_blank"
               href={project.ios}
-              className="toggle-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+              className="popout popout-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
             >
               APPLE STORE
             </a>

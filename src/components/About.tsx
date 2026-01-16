@@ -13,7 +13,7 @@ export default function About() {
           <span className="text-accent">lasts</span>.
         </h1>
 
-        <div className="mt-6 h-px w-24 bg-divider" />
+        <div className="mt-6 h-0.5 w-48 bg-[var(--color-text)]" />
 
         <p className="mt-8 max-w-4xl text-lg leading-relaxed text-foreground/80">
           I&apos;m a senior full stack engineer with 6 years building production
