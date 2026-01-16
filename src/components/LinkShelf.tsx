@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md";
 
 export function LinkShelf() {
   return (
-    <div className="flex items-center justify-center space-x-5 text-neutral-400 lg:mt-12">
+    <div className="flex items-center justify-center space-x-5 text-neutral-400">
       <a
         href="https://github.com/Travisaurus-Rex"
         className="text-2xl lg:text-4xl text-accent hover:text-contrast transition-colors"

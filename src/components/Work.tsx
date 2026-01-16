@@ -55,7 +55,10 @@ export default function Work() {
       <h2 className="text-4xl md:text-5xl font-bold mb-4">Work Experience</h2>
       <div className="space-y-12">
         {jobs.map((job, idx) => (
-          <div key={idx} className="grid grid-cols-8 gap-2 md:gap-6">
+          <div
+            key={idx}
+            className="grid grid-cols-4 gap-2 md:grid-cols-8 md:gap-4"
+          >
             <div className="col-span-2 max-md:col-span-6 text-2xl md:text-sm font-mono uppercase tracking-wide">
               {job.range}
             </div>

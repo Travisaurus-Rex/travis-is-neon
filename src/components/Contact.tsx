@@ -58,16 +58,14 @@ export default function Contact() {
     <section id="contact" className="py-20 scroll-mt-24 section">
       <div className="max-w-3xl mx-auto px-4">
         <div className="text-left mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-3 text-lemon">
-            Get In Touch
-          </h2>
-          <p className="text-text-light/80">
+          <h2 className="text-4xl md:text-5xl font-bold mb-3">Get In Touch</h2>
+          <p>
             Have a project idea or opportunity? Let’s build something great
             together.
           </p>
         </div>
 
-        <div className="border border-sunset/30 bg-steel/30 rounded-lg p-8 backdrop-blur-sm">
+        <div className="border rounded-lg p-8 backdrop-blur-sm">
           <AnimatePresence mode="wait">
             {status !== "sent" ? (
               <motion.div
@@ -80,10 +78,7 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label
-                        htmlFor="name"
-                        className="block text-sm mb-2 text-text-light/90"
-                      >
+                      <label htmlFor="name" className="block text-sm mb-2">
                         Name
                       </label>
                       <input
@@ -93,14 +88,11 @@ export default function Contact() {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         required
-                        className="w-full px-4 py-3 rounded-lg  border border-sunset/30 text-text-light placeholder:text-text-light/50 focus:border-sunset focus:ring-2 focus:ring-sunset/40 outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-lg border outline-none transition-all"
                       />
                     </div>
                     <div>
-                      <label
-                        htmlFor="email"
-                        className="block text-sm mb-2 text-text-light/90"
-                      >
+                      <label htmlFor="email" className="block text-sm mb-2">
                         Email
                       </label>
                       <input
@@ -110,16 +102,13 @@ export default function Contact() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
-                        className="w-full px-4 py-3 rounded-lg  border border-sunset/30 text-text-light placeholder:text-text-light/50 focus:border-sunset focus:ring-2 focus:ring-sunset/40 outline-none transition-all"
+                        className="w-full px-4 py-3 rounded-lg border outline-none transition-all"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label
-                      htmlFor="message"
-                      className="block text-sm mb-2 text-text-light/90"
-                    >
+                    <label htmlFor="message" className="block text-sm mb-2">
                       Message
                     </label>
                     <textarea
@@ -129,7 +118,7 @@ export default function Contact() {
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       required
-                      className="w-full px-4 py-3 rounded-lg  border border-sunset/30 text-text-light placeholder:text-text-light/50 focus:border-sunset focus:ring-2 focus:ring-sunset/40 outline-none transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-lg border outline-none transition-all resize-none"
                     ></textarea>
                   </div>
 
@@ -145,7 +134,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full border border-lemon text-lemon px-8 py-3 rounded-lg hover:bg-lemon hover:text-navy transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer"
+                    className="w-full border px-8 py-3 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 cursor-pointer"
                   >
                     {status === "loading" ? (
                       <LoaderCircle size={18} className="animate-spin" />
@@ -165,10 +154,8 @@ export default function Contact() {
                 exit="exit"
                 className="flex h-full justify-center flex-col items-center text-center py-12"
               >
-                <h2 className="text-3xl text-lemon mb-2 font-semibold">
-                  Message Sent!
-                </h2>
-                <p className="text-text-light/80 max-w-md">
+                <h2 className="text-3xl mb-2 font-semibold">Message Sent!</h2>
+                <p className="max-w-md">
                   Thanks for reaching out — I’ll get back to you soon.
                 </p>
               </motion.div>

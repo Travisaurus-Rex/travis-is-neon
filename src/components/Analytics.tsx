@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 export function Analytics() {
   const pathname = usePathname();
-
+  /*
   useEffect(() => {
     fetch("/api/analytics", {
       method: "POST",
@@ -17,6 +17,7 @@ export function Analytics() {
       }),
     }).catch(() => {});
   }, [pathname]);
+  */
 
   return null;
 }
