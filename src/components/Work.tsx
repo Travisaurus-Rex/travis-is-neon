@@ -90,10 +90,7 @@ export default function Work() {
 
               <div className="flex flex-wrap gap-2">
                 {job.tech.map((t, i) => (
-                  <span
-                    key={i}
-                    className="px-3 py-1 text-xs border text-[var(--color-secondary)] py-1 rounded-full"
-                  >
+                  <span key={i} className="tag">
                     {t}
                   </span>
                 ))}

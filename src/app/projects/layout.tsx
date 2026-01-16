@@ -13,7 +13,7 @@ export default function ProjectsLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-[var(--color-primary)] text-[var(--color-text-light)]">
+      <body className="min-h-screen">
         <Analytics />
         <main className="min-h-screen">{children}</main>
       </body>

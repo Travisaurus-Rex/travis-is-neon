@@ -28,11 +28,6 @@
   flex-direction: column;
   gap: 0.75rem;
   text-decoration: none;
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
 }
 
 .card h3 {
@@ -50,14 +45,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-}
-
-.tags span {
-  font-size: 0.75rem;
-  padding: 0.3rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid var(--color-secondary);
-  color: var(--color-secondary);
 }
 
 /* Bento sizing */

@@ -40,7 +40,9 @@ export default function Projects() {
 
             <div className="tags">
               {project.tags.map((tag) => (
-                <span key={tag}>{tag}</span>
+                <span className="tag" key={tag}>
+                  {tag}
+                </span>
               ))}
             </div>
           </Link>

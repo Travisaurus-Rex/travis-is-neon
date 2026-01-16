@@ -2,12 +2,12 @@ import Logo from "./Logo";
 import { LinkShelf } from "./LinkShelf";
 import { DevName } from "./DevName";
 import { Navbar } from "./Navbar";
-import ThemeToggle from "./ThemeToggle";
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Sidebar() {
   return (
     <>
-      <aside className="hidden lg:flex lg:flex-none lg:w-[22rem] sticky top-0 h-screen flex-col justify-between px-8 py-16 bg-sidebar border-r border-neutral-800">
+      <aside className="sidebar hidden lg:flex lg:flex-none lg:w-[22rem] sticky top-0 h-screen flex-col justify-between px-8 py-16 bg-sidebar">
         <Logo />
         <ThemeToggle />
         <Navbar />

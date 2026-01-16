@@ -1,6 +1,7 @@
 "use client";
 
 import { DevName } from "@/components/DevName";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { ProjectHeader } from "@/components/ProjectHeader";
 import { projects } from "@/lib/data";
 import { useParams } from "next/navigation";
@@ -22,6 +23,7 @@ export default function ProjectPage() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-sidebar backdrop-blur-md">
         <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <DevName />
+          <ThemeToggle />
         </nav>
       </header>
 
@@ -33,7 +35,7 @@ export default function ProjectPage() {
         />
       </div>
 
-      <section className="section space-y-16 text-[var(--color-text-light)]">
+      <section className="section space-y-16">
         <h1 className="text-6xl md:text-6xl font-bold text-lg">
           {project.title}
         </h1>
@@ -41,10 +43,7 @@ export default function ProjectPage() {
         <div>
           <h2 className="text-4xl font-semibold mb-4">About the Project</h2>
           {project.description.about.map((para, i) => (
-            <p
-              key={i}
-              className="text-lg leading-relaxed text-[var(--color-text-light)]/90 mb-6"
-            >
+            <p key={i} className="text-lg leading-relaxed mb-6">
               {para}
             </p>
           ))}
@@ -52,17 +51,14 @@ export default function ProjectPage() {
         <div>
           <h2 className="text-4xl font-semibold mb-4">How It Was Built</h2>
           {project.description.howItWasBuilt.map((para, i) => (
-            <p
-              key={i}
-              className="text-lg leading-relaxed text-[var(--color-text-light)]/90 mb-6"
-            >
+            <p key={i} className="text-lg leading-relaxed mb-6">
               {para}
             </p>
           ))}
         </div>
         <div>
           <h2 className="text-4xl font-semibold mb-4">Key Features</h2>
-          <ul className="list-disc list-inside space-y-2 text-lg text-[var(--color-text-light)]/90">
+          <ul className="list-disc list-inside space-y-2 text-lg">
             {project.description.keyFeatures.map((f, i) => (
               <li key={i}>{f}</li>
             ))}
@@ -87,7 +83,7 @@ export default function ProjectPage() {
             <a
               target="_blank"
               href={project.live}
-              className="px-8 py-3 rounded-md bg-accent text-text-dark hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+              className="toggle-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
             >
               VISIT SITE
             </a>
@@ -97,7 +93,7 @@ export default function ProjectPage() {
             <a
               target="_blank"
               href={project.github.monorepo}
-              className="px-8 py-3 rounded-md bg-accent text-text-dark hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+              className="toggle-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
             >
               GITHUB
             </a>
@@ -109,7 +105,7 @@ export default function ProjectPage() {
                 <a
                   target="_blank"
                   href={project.github.frontend}
-                  className="px-8 py-3 rounded-md bg-accent text-text-dark hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+                  className="toggle-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
                 >
                   FRONTEND
                 </a>
@@ -118,7 +114,7 @@ export default function ProjectPage() {
                 <a
                   target="_blank"
                   href={project.github.backend}
-                  className="px-8 py-3 rounded-md bg-accent text-text-dark hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+                  className="toggle-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
                 >
                   BACKEND
                 </a>
@@ -130,7 +126,7 @@ export default function ProjectPage() {
             <a
               target="_blank"
               href={project.android}
-              className="px-8 py-3 rounded-md bg-accent text-text-dark hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+              className="toggle-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
             >
               GOOGLE PLAY
             </a>
@@ -140,7 +136,7 @@ export default function ProjectPage() {
             <a
               target="_blank"
               href={project.ios}
-              className="px-8 py-3 rounded-md bg-accent text-text-dark hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+              className="toggle-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
             >
               APPLE STORE
             </a>

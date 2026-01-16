@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section id="about" className="min-h-screen flex items-center section">
       <div className="mx-auto w-full max-w-4xl px-6">
-        <div className="mb-4 text-sm uppercase tracking-widest text-accent">
+        <div className="mb-4 text-sm uppercase tracking-widest text-accent font-bold">
           About
         </div>
 

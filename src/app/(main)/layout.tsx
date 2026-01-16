@@ -1,6 +1,5 @@
-// src/app/layout.tsx
 import { Analytics } from "@/components/Analytics";
-import "../globals.css";
+import "@/app/globals.css";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata = {

@@ -36,12 +36,13 @@ export default function Skills() {
           </div>
           <p className="leading-relaxed text-base">
             I design and maintain backend services using
-            <span className="text-accent"> Node.js</span>, TypeScript, NestJS,
-            and Express, as well as
-            <span className="text-accent"> .NET</span> and
-            <span className="text-accent"> C#</span>. I work with databases like
-            PostgreSQL, MongoDB, and SQL Server, focusing on clean architecture,
-            modular code, strong typing, and patterns that scale across teams.
+            <span className="text-accent font-bold"> Node.js</span>, TypeScript,
+            NestJS, and Express, as well as
+            <span className="text-accent font-bold"> .NET</span> and
+            <span className="text-accent font-bold"> C#</span>. I work with
+            databases like PostgreSQL, MongoDB, and SQL Server, focusing on
+            clean architecture, modular code, strong typing, and patterns that
+            scale across teams.
           </p>
         </div>
 
@@ -52,12 +53,12 @@ export default function Skills() {
           </div>
           <p className="leading-relaxed text-base">
             I build production UIs using{" "}
-            <span className="text-accent">React</span> and{" "}
-            <span className="text-accent">Angular</span>, with experience in
-            Next.js based projects. I&apos;ve led large-scale Angular
-            applications in enterprise environments and now work across both
-            ecosystems, focusing on component architecture, state management,
-            and performance optimization.
+            <span className="text-accent font-bold">React</span> and{" "}
+            <span className="text-accent font-bold">Angular</span>, with
+            experience in Next.js based projects. I&apos;ve led large-scale
+            Angular applications in enterprise environments and now work across
+            both ecosystems, focusing on component architecture, state
+            management, and performance optimization.
           </p>
         </div>
 
@@ -88,10 +89,7 @@ export default function Skills() {
 
           <div className="flex flex-wrap gap-4 mt-6">
             {["NestJS", "Go", "PostgreSQL", "Docker", "CI/CD"].map((tech) => (
-              <span
-                key={tech}
-                className="px-4 py-2 rounded-full text-secondary border text-sm"
-              >
+              <span key={tech} className="tag">
                 {tech}
               </span>
             ))}
