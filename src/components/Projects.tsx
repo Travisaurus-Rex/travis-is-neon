@@ -27,7 +27,7 @@ export default function Projects() {
           <Link
             key={project.slug}
             href={`/projects/${project.slug}`}
-            className="card"
+            className="card toggle-btn"
           >
             <div
               className="accent"
