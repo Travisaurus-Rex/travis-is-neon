@@ -65,7 +65,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="border rounded-lg p-8 backdrop-blur-sm">
+        <div className="bg-sidebar border border-black border-2 rounded-lg p-8 backdrop-blur-sm">
           <AnimatePresence mode="wait">
             {status !== "sent" ? (
               <motion.div
