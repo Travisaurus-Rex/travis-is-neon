@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section id="about" className="min-h-screen flex items-center section">
-      <div className="mx-auto w-full max-w-4xl px-6">
+      <div className="mx-auto w-full px-6">
         <div className="mb-4 text-sm uppercase tracking-widest text-accent font-bold">
           About
         </div>
@@ -15,7 +15,7 @@ export default function About() {
 
         <div className="mt-6 h-0.5 w-48 bg-[var(--color-text)]" />
 
-        <p className="mt-8 max-w-4xl text-xl leading-relaxed text-foreground/80">
+        <p className="mt-8 text-xl leading-relaxed text-foreground/80">
           I&apos;m a senior full stack engineer with 6 years building production
           systems for enterprise and consumer platforms. I work across frontend,
           backend, databases, and infrastructure — focusing on architecture that

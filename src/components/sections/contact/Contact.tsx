@@ -105,7 +105,9 @@ export default function Contact() {
                         required
                         className="w-full px-4 py-3 rounded-lg border outline-none transition-all contact-field"
                       />
-                      <p className="contact-error">Email address is required</p>
+                      <p className="hidden contact-error">
+                        Email address is required
+                      </p>
                     </div>
                   </div>
 
