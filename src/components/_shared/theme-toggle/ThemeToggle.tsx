@@ -23,7 +23,7 @@ export default function ThemeToggle() {
   };
 
   return (
-    <div className="toggle-container" onClick={toggleTheme}>
+    <div className="toggle-container max-md:mb-8" onClick={toggleTheme}>
       <div className="icon-left">
         <Sun />
       </div>

@@ -3,6 +3,7 @@ import LinkShelf from "../link-shelf/LinkShelf";
 import DevName from "../dev-name/DevName";
 import Navbar from "../navbar/Navbar";
 import ThemeToggle from "../theme-toggle/ThemeToggle";
+import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
 
 export default function Sidebar() {
   return (
@@ -16,13 +17,10 @@ export default function Sidebar() {
         <LinkShelf />
       </aside>
 
-      <header className="lg:hidden sticky top-0 z-20 bg-sidebar p-4 border-b border-neutral-800">
+      <header className="lg:hidden sticky top-0 z-20 bg-sidebar p-4 border-black border-b-3">
         <div className="flex items-center justify-between">
           <DevName />
-          <div className="flex items-center">
-            <ThemeToggle />
-            <LinkShelf />
-          </div>
+          <HamburgerMenu />
         </div>
       </header>
     </>

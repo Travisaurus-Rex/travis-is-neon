@@ -1,0 +1,33 @@
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  background: var(--hamburger-bg);
+  backdrop-filter: blur(6px);
+
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.98);
+
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
+}
+
+.menu-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+/* Close button */
+.menu-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+}

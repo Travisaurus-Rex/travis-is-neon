@@ -34,7 +34,7 @@ export default function Projects() {
               style={{ background: getGradient(index) }}
             />
 
-            <h3>{project.title}</h3>
+            <h3 className="font-bold">{project.title}</h3>
 
             <p>{project.description.short}</p>
 
