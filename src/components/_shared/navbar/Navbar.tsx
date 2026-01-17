@@ -1,4 +1,4 @@
-export function Navbar() {
+export default function Navbar() {
   return (
     <nav className="space-y-4">
       <a

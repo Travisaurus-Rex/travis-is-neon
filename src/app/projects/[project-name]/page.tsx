@@ -1,10 +1,10 @@
 "use client";
 
-import { DevName } from "@/components/DevName";
-import { ThemeToggle } from "@/components/ThemeToggle";
-import { ProjectHeader } from "@/components/ProjectHeader";
+import DevName from "@/components/_shared/dev-name/DevName";
+import ThemeToggle from "@/components/_shared/theme-toggle/ThemeToggle";
 import { projects } from "@/lib/data";
 import { useParams } from "next/navigation";
+import { ProjectHeader } from "../components/ProjectHeader";
 
 export default function ProjectPage() {
   const params = useParams();

@@ -1,5 +1,6 @@
 "use client";
 
+import "./Contact.css";
 import { FormEvent, useState } from "react";
 import { Send, LoaderCircle } from "lucide-react";
 import { motion, AnimatePresence, easeOut, easeIn } from "framer-motion";
@@ -9,7 +10,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "sent" | "error">(
-    "idle"
+    "idle",
   );
 
   async function handleSubmit(e: FormEvent) {

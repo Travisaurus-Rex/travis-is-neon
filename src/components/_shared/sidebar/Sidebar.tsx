@@ -1,8 +1,8 @@
-import Logo from "./Logo";
-import { LinkShelf } from "./LinkShelf";
-import { DevName } from "./DevName";
-import { Navbar } from "./Navbar";
-import { ThemeToggle } from "./ThemeToggle";
+import Logo from "../logo/Logo";
+import LinkShelf from "../link-shelf/LinkShelf";
+import DevName from "../dev-name/DevName";
+import Navbar from "../navbar/Navbar";
+import ThemeToggle from "../theme-toggle/ThemeToggle";
 
 export default function Sidebar() {
   return (

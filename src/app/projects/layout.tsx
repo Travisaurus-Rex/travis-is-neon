@@ -1,5 +1,5 @@
 import "@/app/globals.css";
-import { Analytics } from "@/components/Analytics";
+import Analytics from "@/components/_shared/analytics/Analytics";
 
 export const metadata = {
   title: "Projects | Travis Adams",

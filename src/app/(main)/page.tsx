@@ -1,9 +1,9 @@
 // src/app/page.tsx
-import About from "@/components/About";
-import Work from "@/components/Work";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
+import About from "@/components/sections/about/About";
+import Work from "@/components/sections/work/Work";
+import Skills from "@/components/sections/skills/Skills";
+import Projects from "@/components/sections/projects/Projects";
+import Contact from "@/components/sections/contact/Contact";
 
 export default function Home() {
   return (
@@ -16,6 +16,3 @@ export default function Home() {
     </>
   );
 }
-
-
-

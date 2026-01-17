@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-export function Analytics() {
+export default function Analytics() {
   const pathname = usePathname();
   /*
   useEffect(() => {

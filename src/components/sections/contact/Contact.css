@@ -1,0 +1,9 @@
+.contact-field {
+  border: 3px solid black;
+  box-shadow: none;
+  transition: all 150ms ease-in-out;
+}
+
+.contact-field:focus {
+  box-shadow: inset 4px 4px black;
+}

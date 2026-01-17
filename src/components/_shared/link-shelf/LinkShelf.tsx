@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedinIn, FaCodepen } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-export function LinkShelf() {
+export default function LinkShelf() {
   return (
     <div className="flex items-center justify-center space-x-5 text-neutral-400">
       <a

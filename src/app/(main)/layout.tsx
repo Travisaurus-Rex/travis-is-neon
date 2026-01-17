@@ -1,6 +1,6 @@
-import { Analytics } from "@/components/Analytics";
 import "@/app/globals.css";
-import Sidebar from "@/components/Sidebar";
+import Analytics from "@/components/_shared/analytics/Analytics";
+import Sidebar from "@/components/_shared/sidebar/Sidebar";
 
 export const metadata = {
   title: "Travis Adams – Fullstack Engineer",
