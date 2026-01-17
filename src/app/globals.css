@@ -49,7 +49,7 @@
   --toggle-thumb: #222831;
   --toggle-thumb-shadow: rgba(0, 0, 0, 0.4);
 
-  --hamburger-bg: rgba(0, 0, 0, 0.75);
+  --hamburger-bg: rgba(30, 35, 45, 0.75);
 }
 
 @layer base {
