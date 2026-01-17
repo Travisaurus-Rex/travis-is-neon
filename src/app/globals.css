@@ -78,14 +78,33 @@
   @apply bg-[var(--color-accent)] hover:bg-[var(--color-contrast)] text-[var(--color-text-dark)] font-semibold px-6 py-3 rounded-lg transition;
 }
 
+.popout {
+  transition:
+    transform 250ms ease-in-out,
+    box-shadow 150ms linear,
+    filter 150ms linear;
+}
+
+.popout > * {
+  transition:
+    transform 250ms ease-in-out,
+    filter 150ms ease;
+}
+
 .popout:hover {
   box-shadow: 6px 6px black;
   transform: translate(-6px, -6px);
 }
 
 .popout:active {
+  filter: contrast(0.9);
   box-shadow: inset 6px 6px black;
   transform: translate(0);
+}
+
+.popout:active > * {
+  filter: contrast(0.9);
+  transform: translate(3px, 3px);
 }
 
 .popout-btn {
@@ -95,6 +114,10 @@
 
 .popout-btn:hover {
   background-color: var(--color-contrast);
+}
+
+.popout-btn:active {
+  filter: contrast(0.9);
 }
 
 span.tag {
