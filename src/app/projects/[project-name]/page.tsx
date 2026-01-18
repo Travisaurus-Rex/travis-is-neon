@@ -35,7 +35,7 @@ export default function ProjectPage() {
         />
       </div>
 
-      <section className="section space-y-16">
+      <section className="section space-y-16 px-4">
         <h1 className="text-6xl md:text-6xl font-bold text-lg">
           {project.title}
         </h1>

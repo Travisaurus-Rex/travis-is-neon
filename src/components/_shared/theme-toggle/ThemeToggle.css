@@ -50,11 +50,3 @@
 .toggle-switch.active .thumb {
   transform: translateX(66px);
 }
-
-.popout {
-  border: 3px solid black;
-  border-radius: 10px;
-  padding: 8px;
-  transition: all 100ms ease-in-out;
-  box-shadow: none;
-}

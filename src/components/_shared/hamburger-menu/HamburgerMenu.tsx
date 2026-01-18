@@ -22,7 +22,7 @@ export default function HamburgerMenu() {
         aria-controls="menu-overlay"
         onClick={() => setOpen(true)}
       >
-        <HamburgerIcon />
+        <HamburgerIcon width="40" height="40" />
       </button>
 
       <nav id="menu-overlay" className={`menu-overlay ${open ? "open" : ""}`}>
@@ -31,7 +31,7 @@ export default function HamburgerMenu() {
           aria-label="Close menu"
           onClick={() => setOpen(false)}
         >
-          <X />
+          <X width="40" height="40" />
         </button>
 
         <ThemeToggle />

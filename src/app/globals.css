@@ -82,33 +82,6 @@
   @apply bg-[var(--color-accent)] hover:bg-[var(--color-contrast)] text-[var(--color-text-dark)] font-semibold px-6 py-3 rounded-lg transition;
 }
 
-.popout {
-  cursor: pointer !important;
-  transition:
-    transform 150ms ease-in-out,
-    box-shadow 150ms linear,
-    filter 150ms linear;
-}
-
-.popout:hover {
-  box-shadow: 6px 6px black;
-  transform: translate(-6px, -6px);
-}
-
-.popout:active {
-  box-shadow: inset 1px 1px black;
-  transform: translate(0);
-}
-
-.popout-btn {
-  background-color: var(--color-accent);
-  color: var(--color-btn-text);
-}
-
-.popout-btn:hover {
-  background-color: var(--color-contrast);
-}
-
 span.tag {
   font-size: 0.75rem;
   font-weight: bold;
@@ -123,12 +96,46 @@ span.tag-lg {
   padding: 0.3rem 0.7rem;
 }
 
-@media (hover: none) and (pointer: coarse) {
+.popout {
+  border: 3px solid black;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+@media screen and (hover: hover) and (pointer: fine) {
   .popout {
+    box-shadow: none;
+    cursor: pointer !important;
     transition:
       transform 150ms ease-in-out,
       box-shadow 150ms linear,
       filter 150ms linear;
+  }
+
+  .popout:hover {
+    box-shadow: 6px 6px black;
+    transform: translate(-6px, -6px);
+  }
+
+  .popout:active {
+    box-shadow: inset 1px 1px black;
+    transform: translate(0);
+  }
+
+  .popout-btn {
+    background-color: var(--color-accent);
+    color: var(--color-btn-text);
+  }
+
+  .popout-btn:hover {
+    background-color: var(--color-contrast);
+  }
+}
+
+@media screen and (hover: none) and (pointer: coarse) {
+  .popout {
+    background-color: var(--color-bg, white);
+    transition: none;
     box-shadow: 6px 6px black;
     transform: translate(-6px, -6px);
   }

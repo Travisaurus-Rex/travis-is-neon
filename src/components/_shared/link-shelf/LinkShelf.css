@@ -1,0 +1,6 @@
+@media screen and (max-width: 640px) {
+  a.popout {
+    font-size: 36px;
+    padding: 12px 32px;
+  }
+}
