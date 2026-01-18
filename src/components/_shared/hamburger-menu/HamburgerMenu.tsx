@@ -5,13 +5,19 @@ import LinkShelf from "../link-shelf/LinkShelf";
 import ThemeToggle from "../theme-toggle/ThemeToggle";
 import "./HamburgerMenu.css";
 import { HamburgerIcon, X } from "lucide-react";
+import { useScrollLock } from "@/hooks/useScrollLock";
 
 export default function HamburgerMenu() {
   const [open, setOpen] = useState(false);
+  const { lockScroll, unlockScroll } = useScrollLock();
 
   useEffect(() => {
-    return () => setOpen(false);
-  }, []);
+    if (open) {
+      lockScroll();
+    } else {
+      unlockScroll();
+    }
+  }, [open]);
 
   return (
     <>
