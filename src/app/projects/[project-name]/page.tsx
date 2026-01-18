@@ -21,8 +21,8 @@ export default function ProjectPage() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-sidebar backdrop-blur-md border border-b-2 border-black">
-        <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between relative">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-sidebar border border-b-2 border-black">
+        <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between relative">
           <DevName />
           <div className="max-md:hidden">
             <ThemeToggle />

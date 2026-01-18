@@ -1,4 +1,3 @@
-// src/app/page.tsx
 import About from "@/components/sections/about/About";
 import Work from "@/components/sections/work/Work";
 import Skills from "@/components/sections/skills/Skills";
