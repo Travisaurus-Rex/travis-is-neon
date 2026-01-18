@@ -122,3 +122,28 @@ span.tag-lg {
   font-size: 1rem;
   padding: 0.3rem 0.7rem;
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .popout {
+    transition:
+      transform 150ms ease-in-out,
+      box-shadow 150ms linear,
+      filter 150ms linear;
+    box-shadow: 6px 6px black;
+    transform: translate(-6px, -6px);
+  }
+
+  .popout:active {
+    box-shadow: inset 1px 1px black;
+    transform: translate(0);
+  }
+
+  .popout-btn {
+    background-color: var(--color-accent);
+    color: var(--color-btn-text);
+  }
+
+  .popout-btn:active {
+    background-color: var(--color-contrast);
+  }
+}
