@@ -145,7 +145,7 @@ export default function Contact() {
                     ) : (
                       <Send size={18} />
                     )}
-                    <span>Send Message</span>
+                    <span>SEND MESSAGE</span>
                   </button>
                 </form>
               </motion.div>

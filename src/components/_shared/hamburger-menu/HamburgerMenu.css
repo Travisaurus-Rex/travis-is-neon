@@ -13,6 +13,8 @@
   opacity: 0;
   pointer-events: none;
   transform: scale(0.98);
+  height: 100vh;
+  width: 100vw;
 
   transition:
     opacity 200ms ease,
@@ -27,6 +29,6 @@
 
 .menu-close {
   position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
+  top: 1rem;
+  right: 2.5rem;
 }

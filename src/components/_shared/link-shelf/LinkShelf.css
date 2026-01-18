@@ -1,6 +1,11 @@
+.link-shelf-a {
+  font-size: 28px;
+  padding: 15px;
+}
+
 @media screen and (max-width: 640px) {
-  a.popout {
-    font-size: 36px;
+  .link-shelf-a {
     padding: 12px 32px;
+    font-weight: 300;
   }
 }

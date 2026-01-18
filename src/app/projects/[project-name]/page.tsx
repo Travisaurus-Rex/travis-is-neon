@@ -5,6 +5,7 @@ import ThemeToggle from "@/components/_shared/theme-toggle/ThemeToggle";
 import { projects } from "@/lib/data";
 import { useParams } from "next/navigation";
 import { ProjectHeader } from "../components/ProjectHeader";
+import HamburgerMenu from "@/components/_shared/hamburger-menu/HamburgerMenu";
 
 export default function ProjectPage() {
   const params = useParams();
@@ -21,9 +22,14 @@ export default function ProjectPage() {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-sidebar backdrop-blur-md border border-b-2 border-black">
-        <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between relative">
           <DevName />
-          <ThemeToggle />
+          <div className="max-md:hidden">
+            <ThemeToggle />
+          </div>
+          <div className="md:hidden relative top-0 left-0">
+            <HamburgerMenu />
+          </div>
         </nav>
       </header>
 
@@ -80,7 +86,7 @@ export default function ProjectPage() {
             <a
               target="_blank"
               href={project.live}
-              className="popout popout-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+              className="popout popout-btn"
             >
               VISIT SITE
             </a>
@@ -90,7 +96,7 @@ export default function ProjectPage() {
             <a
               target="_blank"
               href={project.github.monorepo}
-              className="popout popout-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+              className="popout popout-btn"
             >
               GITHUB
             </a>
@@ -102,7 +108,7 @@ export default function ProjectPage() {
                 <a
                   target="_blank"
                   href={project.github.frontend}
-                  className="popout popout-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+                  className="popout popout-btn"
                 >
                   FRONTEND
                 </a>
@@ -111,7 +117,7 @@ export default function ProjectPage() {
                 <a
                   target="_blank"
                   href={project.github.backend}
-                  className="popout popout-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+                  className="popout popout-btn"
                 >
                   BACKEND
                 </a>
@@ -123,18 +129,14 @@ export default function ProjectPage() {
             <a
               target="_blank"
               href={project.android}
-              className="popout popout-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
+              className="popout popout-btn"
             >
               GOOGLE PLAY
             </a>
           )}
 
           {project.ios && (
-            <a
-              target="_blank"
-              href={project.ios}
-              className="popout popout-btn px-8 py-3 rounded-md bg-accent hover:bg-[var(--color-contrast)] font-bold text-lg transition-all duration-300"
-            >
+            <a target="_blank" href={project.ios} className="popout popout-btn">
               APPLE STORE
             </a>
           )}
