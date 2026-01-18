@@ -1,39 +1,21 @@
+import "./Navbar.css";
+
 export default function Navbar() {
   return (
-    <nav className="space-y-4">
-      <a
-        key="about"
-        href="#about"
-        className="block text-3xl font-medium text-[var(--color-accent)] hover:text-[var(--color-contrast)] transition-colors duration-150"
-      >
+    <nav className="navbar">
+      <a key="about" href="#about" className="navbar-link">
         ABOUT
       </a>
-      <a
-        key="skills"
-        href="#skills"
-        className="block text-3xl font-medium text-[var(--color-accent)] hover:text-[var(--color-contrast)] transition-colors duration-150"
-      >
+      <a key="skills" href="#skills" className="navbar-link">
         SKILLS
       </a>
-      <a
-        key="work"
-        href="#work"
-        className="block text-3xl font-medium text-[var(--color-accent)] hover:text-[var(--color-contrast)] transition-colors duration-150"
-      >
+      <a key="work" href="#work" className="navbar-link">
         WORK
       </a>
-      <a
-        key="projects"
-        href="#projects"
-        className="block text-3xl font-medium text-[var(--color-accent)] hover:text-[var(--color-contrast)] transition-colors duration-150"
-      >
+      <a key="projects" href="#projects" className="navbar-link">
         PROJECTS
       </a>
-      <a
-        key="contact"
-        href="#contact"
-        className="block text-3xl font-medium text-[var(--color-accent)] hover:text-[var(--color-contrast)] transition-colors duration-150"
-      >
+      <a key="contact" href="#contact" className="navbar-link">
         CONTACT
       </a>
     </nav>

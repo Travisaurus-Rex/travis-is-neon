@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-link {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--color-accent);
+  transition: all 150ms ease;
+}
+
+.navbar-link:hover {
+  color: var(--color-contrast);
+}
