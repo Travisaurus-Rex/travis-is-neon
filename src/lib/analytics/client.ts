@@ -1,10 +1,13 @@
 import { createClient } from "@supabase/supabase-js";
 import { AnalyticsEvent } from "./types";
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-);
+const supabase =
+  typeof window !== "undefined"
+    ? createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+      )
+    : null;
 
 const getSessionId = (): string | null => {
   if (typeof window === "undefined") return null;
@@ -29,7 +32,7 @@ const getUserFingerprint = (): string | null => {
 };
 
 export const trackEvent = async (event: AnalyticsEvent): Promise<void> => {
-  if (typeof window === "undefined") return;
+  if (typeof window === "undefined" || !supabase) return;
 
   const sessionId = getSessionId();
   if (!sessionId) return;
