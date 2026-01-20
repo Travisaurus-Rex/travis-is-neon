@@ -1,23 +1,28 @@
 "use client";
 
-import DevName from "@/components/_shared/dev-name/DevName";
-import ThemeToggle from "@/components/_shared/theme-toggle/ThemeToggle";
+import DevName from "@/components/ui/dev-name/DevName";
+import ThemeToggle from "@/components/ui/theme-toggle/ThemeToggle";
 import { projects } from "@/lib/data";
 import { useParams } from "next/navigation";
 import { ProjectHeader } from "../components/ProjectHeader";
-import HamburgerMenu from "@/components/_shared/hamburger-menu/HamburgerMenu";
+import HamburgerMenu from "@/components/ui/hamburger-menu/HamburgerMenu";
+import { usePageView } from "@/lib/analytics/hooks";
 
 export default function ProjectPage() {
   const params = useParams();
   const _slug = params["project-name"];
   const project = projects.find((p) => p.slug === _slug);
 
-  if (!project)
+  if (!project) {
+    usePageView("project_page_null");
     return (
       <div className="p-12 text-center text-[var(--color-text-light)]">
         Project not found
       </div>
     );
+  }
+
+  usePageView(_slug as string);
 
   return (
     <>

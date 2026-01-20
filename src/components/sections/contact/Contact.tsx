@@ -4,6 +4,7 @@ import "./Contact.css";
 import { FormEvent, useState } from "react";
 import { Send, LoaderCircle } from "lucide-react";
 import { motion, AnimatePresence, easeOut, easeIn } from "framer-motion";
+import { env } from "@/config/env";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -16,7 +17,7 @@ export default function Contact() {
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
 
-    const url = process.env.NEXT_PUBLIC_RESEND_URL;
+    const url = env.resend.url;
     if (!url) {
       setStatus("error");
       return;

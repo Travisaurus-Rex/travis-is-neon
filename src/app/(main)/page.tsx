@@ -1,10 +1,13 @@
+"use client";
 import About from "@/components/sections/about/About";
 import Work from "@/components/sections/work/Work";
 import Skills from "@/components/sections/skills/Skills";
 import Projects from "@/components/sections/projects/Projects";
 import Contact from "@/components/sections/contact/Contact";
+import { usePageView } from "@/lib/analytics/hooks";
 
 export default function Home() {
+  usePageView();
   return (
     <>
       <About />
