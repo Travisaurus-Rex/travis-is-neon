@@ -6,13 +6,22 @@ import { projects } from "@/lib/data";
 import { useParams } from "next/navigation";
 import { ProjectHeader } from "../components/ProjectHeader";
 import HamburgerMenu from "@/components/ui/hamburger-menu/HamburgerMenu";
-import { usePageView } from "@/lib/analytics/hooks";
+import { usePageView, useTrackEvent } from "@/lib/analytics/hooks";
 
 export default function ProjectPage() {
   const params = useParams();
   const _slug = params["project-name"];
   const project = projects.find((p) => p.slug === _slug);
+  const trackEvent = useTrackEvent();
   usePageView(project ? (_slug as string) : "project_not_found");
+
+  const handleOutboundClick = (url: string) => {
+    trackEvent({
+      event_type: "outbound_link",
+      outbound_url: url,
+      project_slug: _slug as string,
+    });
+  };
 
   if (!project) {
     return (
@@ -90,6 +99,7 @@ export default function ProjectPage() {
               target="_blank"
               href={project.live}
               className="popout popout-btn"
+              onClick={() => handleOutboundClick(project.live!)}
             >
               VISIT SITE
             </a>
@@ -100,6 +110,7 @@ export default function ProjectPage() {
               target="_blank"
               href={project.github.monorepo}
               className="popout popout-btn"
+              onClick={() => handleOutboundClick(project.github!.monorepo!)}
             >
               GITHUB
             </a>
@@ -112,6 +123,7 @@ export default function ProjectPage() {
                   target="_blank"
                   href={project.github.frontend}
                   className="popout popout-btn"
+                  onClick={() => handleOutboundClick(project.github!.frontend!)}
                 >
                   FRONTEND
                 </a>
@@ -121,6 +133,7 @@ export default function ProjectPage() {
                   target="_blank"
                   href={project.github.backend}
                   className="popout popout-btn"
+                  onClick={() => handleOutboundClick(project.github!.backend!)}
                 >
                   BACKEND
                 </a>
@@ -133,13 +146,19 @@ export default function ProjectPage() {
               target="_blank"
               href={project.android}
               className="popout popout-btn"
+              onClick={() => handleOutboundClick(project.android!)}
             >
               GOOGLE PLAY
             </a>
           )}
 
           {project.ios && (
-            <a target="_blank" href={project.ios} className="popout popout-btn">
+            <a
+              target="_blank"
+              href={project.ios}
+              className="popout popout-btn"
+              onClick={() => handleOutboundClick(project.ios!)}
+            >
               APPLE STORE
             </a>
           )}
