@@ -6,7 +6,7 @@ export default function About() {
           About
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight text-balance">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight text-balance">
           I build software that
           <span className="text-accent"> works, </span> then
           <span className="text-accent"> scales</span>, and then
