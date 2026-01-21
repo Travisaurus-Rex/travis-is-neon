@@ -6,11 +6,11 @@ export default function About() {
           About
         </div>
 
-        <h1 className="text-5xl md:text-8xl font-bold leading-tight text-balance">
+        <h1 className="text-5xl md:text-7xl font-bold leading-tight text-balance">
           I build software that
-          <span className="text-accent"> scales</span>,
-          <span className="text-accent"> ships</span>, and{" "}
-          <span className="text-accent">lasts</span>.
+          <span className="text-accent"> works, </span> then
+          <span className="text-accent"> scales</span>, and then
+          <span className="text-accent"> works</span> some more.
         </h1>
 
         <div className="mt-6 h-0.5 w-48 bg-[var(--color-text)]" />
@@ -18,8 +18,12 @@ export default function About() {
         <p className="mt-8 text-xl leading-relaxed text-foreground/80">
           I&apos;m a senior full stack engineer with 6 years building production
           systems for enterprise and consumer platforms. I work across frontend,
-          backend, databases, and infrastructure — focusing on architecture that
-          adapts as products grow and teams evolve.
+          backend, databases, and infrastructure, focusing on architecture that
+          adapts as products grow and teams evolve.{" "}
+          <span className="font-bold">
+            I also write in really big words sometimes but I promise, I'm not
+            screaming at you.
+          </span>
         </p>
       </div>
     </section>

@@ -9,26 +9,40 @@ export default function Skills() {
         </h2>
         <div className="space-y-6 text-lg leading-relaxed">
           <p>
-            I&apos;m a product focused software engineer who builds features
-            with intent. My background in long lived, large scale systems — from
-            enterprise platforms serving 10,000+ customers to mission critical
-            mobile apps — taught me how architecture, tradeoffs, and constraints
-            actually show up in real products.
+            I build software with the assumption that it will be used, changed,
+            and occasionally misunderstood. Most of my decisions come from
+            seeing what actually happens after launch, not what looks good in a
+            diagram.
           </p>
 
-          <p>
-            Today, I focus on making clear decisions about scope, priorities,
-            and implementation details that move products forward without
-            unnecessary complexity. I care about building things that are
-            understandable, adaptable, and easy to evolve as requirements
-            change.
-          </p>
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
+            <p className="flex-1 relative">
+              I care about tradeoffs, constraints, and the boring details that
+              decide whether a product quietly succeeds or becomes
+              someone&apos;s{" "}
+              <span className="text-accent font-bold">
+                full-time firefighting job
+              </span>
+              . That perspective comes from working on systems that had to
+              survive growth, handovers, and real users with real expectations.
+            </p>
+
+            <img
+              src="https://media1.tenor.com/m/tU9-0t-rp7gAAAAC/this-is-fine.gif"
+              alt="This is fine dog in a burning room"
+              className="
+                          w-full lg:w-auto
+                          pointer-events-none
+                          transition-opacity duration-200
+                          group-hover:opacity-100
+                        "
+            />
+          </div>
 
           <p>
-            My work emphasizes thoughtful problem solving, strong fundamentals,
-            and choosing the right level of abstraction for the problem at hand.
-            The goal is not perfect systems, but software that is reliable,
-            useful, and easy for teams to work with over time.
+            The goal isn&apos;t clever code or perfect abstractions, it&apos;s
+            software that earns trust over time and makes the next decision
+            easier, not harder.
           </p>
         </div>
 
@@ -40,13 +54,10 @@ export default function Skills() {
             </div>
             <p className="leading-relaxed text-base">
               I design and maintain backend services using
-              <span className="text-accent font-bold"> Node.js</span>,
-              TypeScript, NestJS, and Express, as well as
-              <span className="text-accent font-bold"> .NET</span> and
-              <span className="text-accent font-bold"> C#</span>. I work with
-              databases like PostgreSQL, MongoDB, and SQL Server, focusing on
-              clean architecture, modular code, strong typing, and patterns that
-              scale across teams.
+              <span className="text-accent font-bold"> Node.js</span> and
+              <span className="text-accent font-bold"> TypeScript</span>...
+              usually with NestJS when I want structure, opinions, and fewer bad
+              decisions, and Express when I just need an API running yesterday.
             </p>
           </div>
 
@@ -58,11 +69,11 @@ export default function Skills() {
             <p className="leading-relaxed text-base">
               I build production UIs using{" "}
               <span className="text-accent font-bold">React</span> and{" "}
-              <span className="text-accent font-bold">Angular</span>, with
-              experience in Next.js based projects. I&apos;ve led large-scale
-              Angular applications in enterprise environments and now work
-              across both ecosystems, focusing on component architecture, state
-              management, and performance optimization.
+              <span className="text-accent font-bold">Next.js</span>; obsessing
+              over component architecture, state management, and performance so
+              things don&apos;t mysteriously catch fire in production. User
+              experience is non-negotiable. I&apos;ve tried ignoring it before.
+              It always comes back angry.
             </p>
           </div>
 
@@ -72,11 +83,10 @@ export default function Skills() {
               <h3 className="text-xl font-semibold">Mindset</h3>
             </div>
             <p className="leading-relaxed text-base">
-              I emphasize code clarity, testing, and maintainable architecture.
-              I enjoy improving developer experience through better tooling,
-              documentation, and CI/CD workflows. My backend focus has
-              strengthened how I approach performance, reliability, and
-              long-term system health.
+              I write clear, testable code and aim to leave systems better than
+              I found them. I care about developer experience, documentation,
+              and automation, and I think performance and reliability deserve
+              more attention than a late-night incident report.
             </p>
           </div>
         </div>
@@ -85,18 +95,20 @@ export default function Skills() {
           <div className="md:p-8 rounded-lg">
             <h3 className="text-2xl mb-4 text-neon-cyan">Always Learning</h3>
             <p className="text-foreground/80 leading-relaxed text-base">
-              I stay committed to continuous learning within the Node.js
-              ecosystem. I&apos;m currently deepening my expertise in NestJS,
-              advanced TypeScript patterns, backend performance optimization,
-              database design, testing, and distributed systems.
+              I stay committed to continuous learning, largely because standing
+              still is how you wake up outdated. I learn by shipping, breaking
+              things (responsibly), and figuring out why something worked (or
+              didn&apos;t) after it&apos;s in the real world.
             </p>
 
             <div className="flex flex-wrap gap-4 mt-6">
-              {["NestJS", "Go", "PostgreSQL", "Docker", "CI/CD"].map((tech) => (
-                <span key={tech} className="tag">
-                  {tech}
-                </span>
-              ))}
+              {["Vue.js", "Bun", "Real-time systems", "Go", "Kubernetes"].map(
+                (tech) => (
+                  <span key={tech} className="tag">
+                    {tech}
+                  </span>
+                ),
+              )}
             </div>
           </div>
         </div>
