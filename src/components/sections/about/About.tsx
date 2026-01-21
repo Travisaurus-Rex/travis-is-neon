@@ -21,8 +21,8 @@ export default function About() {
           backend, databases, and infrastructure, focusing on architecture that
           adapts as products grow and teams evolve.{" "}
           <span className="font-bold">
-            I also write in really big words sometimes but I promise, I'm not
-            screaming at you.
+            I also write in really big words sometimes but I promise, I&apos;m
+            not screaming at you.
           </span>
         </p>
       </div>
