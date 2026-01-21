@@ -15,15 +15,16 @@ export default function About() {
 
         <div className="mt-6 h-0.5 w-48 bg-[var(--color-text)]" />
 
-        <p className="mt-8 text-xl leading-relaxed text-foreground/80">
+        <p className="mt-8 text-xl leading-relaxed">
           I&apos;m a senior full stack engineer with 6 years building production
           systems for enterprise and consumer platforms. I work across frontend,
           backend, databases, and infrastructure, focusing on architecture that
           adapts as products grow and teams evolve.{" "}
-          <span className="font-bold">
-            I also write in really big words sometimes but I promise, I&apos;m
-            not screaming at you.
-          </span>
+        </p>
+
+        <p className="mt-8 text-xl font-bold">
+          I also write in really big words sometimes but I promise, I&apos;m not
+          screaming at you.
         </p>
       </div>
     </section>

@@ -115,7 +115,7 @@ span.tag-lg {
   #about {
     padding-top: 0;
     padding-bottom: 0;
-    height: calc(100vh-94px);
+    height: calc(100vh - 94px);
   }
 }
 
