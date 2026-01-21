@@ -12,12 +12,4 @@
 
 .navbar-link:hover {
   color: var(--color-contrast);
-  -webkit-text-stroke: 1px black;
-  text-shadow:
-    1px 1px black,
-    2px 2px black,
-    3px 3px black,
-    4px 4px black,
-    5px 5px black,
-    6px 6px black;
 }
