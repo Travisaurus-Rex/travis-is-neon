@@ -9,4 +9,7 @@ export const env = {
   resend: {
     url: process.env.NEXT_PUBLIC_RESEND_URL!,
   },
+  environment: {
+    prod: process.env.NEXT_PUBLIC_IS_PRODUCTION === "true",
+  },
 } as const;
