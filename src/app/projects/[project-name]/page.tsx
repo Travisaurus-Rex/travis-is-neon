@@ -19,7 +19,6 @@ export default function ProjectPage() {
     trackEvent({
       event_type: "outbound_link",
       outbound_url: url,
-      project_slug: _slug as string,
     });
   };
 
