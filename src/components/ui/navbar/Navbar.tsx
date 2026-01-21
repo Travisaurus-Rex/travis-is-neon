@@ -1,8 +1,11 @@
 import "./Navbar.css";
+import { Luckiest_Guy } from "next/font/google";
+
+const font = Luckiest_Guy({ subsets: ["latin"], weight: "400" });
 
 export default function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${font.className}`}>
       <a key="about" href="#about" className="navbar-link">
         ABOUT
       </a>

@@ -68,6 +68,7 @@
 
 .sexy-texty {
   color: var(--color-contrast);
+  -webkit-text-stroke: 6px black;
   text-shadow:
     1px 1px black,
     2px 2px black,
