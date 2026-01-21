@@ -4,6 +4,7 @@ import DevName from "../dev-name/DevName";
 import Navbar from "../navbar/Navbar";
 import ThemeToggle from "../theme-toggle/ThemeToggle";
 import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
+import Footer from "../footer/Footer";
 
 export default function Sidebar() {
   return (
@@ -15,6 +16,7 @@ export default function Sidebar() {
         </div>
         <Navbar />
         <LinkShelf />
+        <Footer />
       </aside>
 
       <header className="lg:hidden sticky top-0 z-20 bg-sidebar p-4 border-black border-b-3">
