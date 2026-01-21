@@ -4,6 +4,7 @@ import DevName from "../dev-name/DevName";
 import Navbar from "../navbar/Navbar";
 import ThemeToggle from "../theme-toggle/ThemeToggle";
 import HamburgerMenu from "../hamburger-menu/HamburgerMenu";
+import { VoiceToggle } from "../voice-toggle/VoiceToggle";
 
 export default function Sidebar() {
   return (
@@ -12,6 +13,7 @@ export default function Sidebar() {
         <div>
           <Logo />
           <ThemeToggle />
+          <VoiceToggle />
         </div>
         <Navbar />
         <LinkShelf />

@@ -1,6 +1,6 @@
 "use client";
 
-import { useTheme } from "@/stores/theme";
+import { useTheme } from "@/stores/useThemeStore";
 import "./ThemeToggle.css";
 import { Moon, Sun } from "lucide-react";
 import { useEffect } from "react";
