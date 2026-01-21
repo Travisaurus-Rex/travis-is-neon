@@ -6,7 +6,7 @@ export default function About() {
           About
         </div>
 
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight text-balance">
+        <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight text-balance">
           I build software that
           <span className="text-accent"> works, </span> then
           <span className="text-accent"> scales</span>, and then
@@ -23,7 +23,8 @@ export default function About() {
         </p>
 
         <p className="mt-8 text-xl font-bold">
-          I also write in really big words sometimes but I promise, I&apos;m not
+          <span className="text-accent font-bold text-2xl px-1">*</span>I also
+          write in really big words sometimes but I promise, I&apos;m not
           screaming at you.
         </p>
       </div>
