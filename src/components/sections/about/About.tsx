@@ -17,6 +17,7 @@ export default function About() {
           <span className="text-accent"> works, </span> then
           <span className="text-accent"> scales</span>, and then
           <span className="text-accent"> works</span> some more.
+          <span className="text-accent font-bold px-1">*</span>
         </h1>
 
         <div className="mt-6 h-0.5 w-48 bg-[var(--color-text)]" />
