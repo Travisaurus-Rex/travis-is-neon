@@ -66,6 +66,17 @@
   height: 100vh;
 }
 
+.sexy-texty {
+  color: var(--color-contrast);
+  text-shadow:
+    1px 1px black,
+    2px 2px black,
+    3px 3px black,
+    4px 4px black,
+    5px 5px black,
+    6px 6px black;
+}
+
 .sidebar {
   border-right: 3px solid black;
 }

@@ -1,3 +1,7 @@
+import { Luckiest_Guy } from "next/font/google";
+
+const font = Luckiest_Guy({ subsets: ["latin"], weight: "400" });
+
 export default function About() {
   return (
     <section id="about" className="flex items-center section">
@@ -6,12 +10,15 @@ export default function About() {
           About
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight text-balance">
+        <h1 className={`sexy-texty text-8xl ${font.className}`}>
+          Travis Adams
+        </h1>
+        <h2 className="text-5xl md:text-4xl font-bold leading-tight text-balance">
           I build software that
           <span className="text-accent"> works, </span> then
           <span className="text-accent"> scales</span>, and then
           <span className="text-accent"> works</span> some more.
-        </h1>
+        </h2>
 
         <div className="mt-6 h-0.5 w-48 bg-[var(--color-text)]" />
 
