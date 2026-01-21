@@ -2,7 +2,7 @@ import "@/app/globals.css";
 import Sidebar from "@/components/ui/sidebar/Sidebar";
 
 export const metadata = {
-  title: "Travis Adams – Fullstack Engineer",
+  title: "Travis Adams | Builder of Things",
   description: "Portfolio site for Travis Adams",
 };
 
