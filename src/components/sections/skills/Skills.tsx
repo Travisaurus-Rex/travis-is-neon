@@ -55,9 +55,12 @@ export default function Skills() {
             <p className="leading-relaxed text-base">
               I design and maintain backend services using
               <span className="text-accent font-bold"> Node.js</span> and
-              <span className="text-accent font-bold"> TypeScript</span>...
-              usually with NestJS when I want structure, opinions, and fewer bad
-              decisions, and Express when I just need an API running yesterday.
+              <span className="text-accent font-bold"> NestJS</span> when I want
+              structure, opinions, and fewer bad decisions, and Express when I
+              just need an API running yesterday. Since early 2025, I've been
+              building apps that need concurrency and worker pools using{" "}
+              <span className="text-accent font-bold">Go</span> /{" "}
+              <span className="text-accent font-bold"> GoLang</span>.
             </p>
           </div>
 
@@ -67,9 +70,11 @@ export default function Skills() {
               <h3 className="text-xl font-semibold text-neon-pink">Frontend</h3>
             </div>
             <p className="leading-relaxed text-base">
-              I build production UIs using{" "}
-              <span className="text-accent font-bold">React</span> and{" "}
-              <span className="text-accent font-bold">Next.js</span>; obsessing
+              With a strong foundation in JavaScript and TypeScript, I&apos;ve
+              built dozens of productions apps with
+              <span className="text-accent font-bold"> React</span>,
+              <span className="text-accent font-bold"> Next.js</span> and
+              <span className="text-accent font-bold"> Angular</span>, obsessing
               over component architecture, state management, and performance so
               things don&apos;t mysteriously catch fire in production. User
               experience is non-negotiable. I&apos;ve tried ignoring it before.
@@ -102,13 +107,17 @@ export default function Skills() {
             </p>
 
             <div className="flex flex-wrap gap-4 mt-6">
-              {["Vue.js", "Bun", "Real-time systems", "Go", "Kubernetes"].map(
-                (tech) => (
-                  <span key={tech} className="tag">
-                    {tech}
-                  </span>
-                ),
-              )}
+              {[
+                "GoLang",
+                "Vue.js",
+                "Bun",
+                "Real-time systems",
+                "Kubernetes",
+              ].map((tech) => (
+                <span key={tech} className="tag">
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
         </div>
