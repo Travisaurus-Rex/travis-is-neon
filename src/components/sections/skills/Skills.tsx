@@ -57,8 +57,8 @@ export default function Skills() {
               <span className="text-accent font-bold"> Node.js</span> and
               <span className="text-accent font-bold"> NestJS</span> when I want
               structure, opinions, and fewer bad decisions, and Express when I
-              just need an API running yesterday. Since early 2025, I've been
-              building apps that need concurrency and worker pools using{" "}
+              just need an API running yesterday. Since early 2025, I&apos;ve
+              been building apps that need concurrency and worker pools using{" "}
               <span className="text-accent font-bold">Go</span> /{" "}
               <span className="text-accent font-bold"> GoLang</span>.
             </p>
