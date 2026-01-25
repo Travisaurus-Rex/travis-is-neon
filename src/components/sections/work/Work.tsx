@@ -1,4 +1,5 @@
 export default function Work() {
+  const showTags = false;
   const jobs = [
     {
       title: "Senior Software Engineer",
@@ -87,15 +88,15 @@ export default function Work() {
                   </li>
                 ))}
               </ul>
-              {/*}
-              <div className="flex flex-wrap gap-2">
-                {job.tech.map((t, i) => (
-                  <span key={i} className="tag">
-                    {t}
-                  </span>
-                ))}
-              </div>
-              {*/}
+              {showTags && (
+                <div className="flex flex-wrap gap-2">
+                  {job.tech.map((t, i) => (
+                    <span key={i} className="tag">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))}
