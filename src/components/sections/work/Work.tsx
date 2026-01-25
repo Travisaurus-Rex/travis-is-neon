@@ -87,7 +87,7 @@ export default function Work() {
                   </li>
                 ))}
               </ul>
-
+              {/*}
               <div className="flex flex-wrap gap-2">
                 {job.tech.map((t, i) => (
                   <span key={i} className="tag">
@@ -95,6 +95,7 @@ export default function Work() {
                   </span>
                 ))}
               </div>
+              {*/}
             </div>
           </div>
         ))}
