@@ -139,6 +139,11 @@ span.tag-lg {
     transform: translate(0);
   }
 
+  .popout-noclick:active {
+    box-shadow: 6px 6px black;
+    transform: translate(-6px, -6px);
+  }
+
   .popout-btn {
     background-color: var(--color-accent);
     color: var(--color-btn-text);

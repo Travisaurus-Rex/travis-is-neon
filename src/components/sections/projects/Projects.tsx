@@ -16,6 +16,7 @@ function getGradient(index: number) {
 }
 
 export default function Projects() {
+  const showTags = false;
   return (
     <section id="projects" className="projects">
       <div className="section">
@@ -27,7 +28,7 @@ export default function Projects() {
           <Link
             key={project.slug}
             href={`/projects/${project.slug}`}
-            className="card popout"
+            className="card popout popout-noclick"
           >
             <div
               className="accent"
@@ -37,14 +38,18 @@ export default function Projects() {
             <h3 className="font-bold">{project.title}</h3>
 
             <p>{project.description.short}</p>
-
-            <div className="tags">
-              {project.tags.map((tag) => (
-                <span className="tag" key={tag}>
-                  {tag}
-                </span>
-              ))}
-            </div>
+            <button className="popout popout-btn self-start mt-auto">
+              View More
+            </button>
+            {showTags && (
+              <div className="tags">
+                {project.tags.map((tag) => (
+                  <span className="tag" key={tag}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
           </Link>
         ))}
       </div>
