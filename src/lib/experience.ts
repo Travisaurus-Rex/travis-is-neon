@@ -13,7 +13,7 @@ export const experience: Experience[] = [
     id: "ksense",
     start: "May 2026",
     end: "Sep 2026",
-    title: "Software Engineer",
+    title: "Full Stack Software Engineer",
     company: "Ksense Technology Group",
     summary:
       "Delivered client projects at a software agency, using AI-powered development to ship production web apps faster without cutting corners.",
@@ -31,7 +31,7 @@ export const experience: Experience[] = [
     id: "cxtec",
     start: "Mar 2024",
     end: "Apr 2025",
-    title: "Software Engineer",
+    title: "Software Engineer II",
     company: "CXtec",
     summary:
       "Owned the modernization of legacy systems on a fully remote, multinational team.",
@@ -40,7 +40,7 @@ export const experience: Experience[] = [
     id: "meyer",
     start: "2019",
     end: "2024",
-    title: "Software Engineer",
+    title: "Front End Developer",
     company: "Meyer Distributing",
     summary:
       "Architected 25+ internal apps and rebuilt the B2B platform behind 10,000+ retail businesses. Mentored three engineers along the way.",
