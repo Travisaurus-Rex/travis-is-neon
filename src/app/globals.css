@@ -1,64 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=PT+Sans+Caption:wght@400;700&display=swap");
 @import "tailwindcss";
 
-@theme {
-  --color-primary: #faf3e1;
-  --color-secondary: #1581bf;
-  --color-accent: #bf124d;
-  --color-contrast: #eea727;
-  --color-sidebar: #fff;
-  --color-text: #1c1c1c;
-  --color-text-light: #fffbde;
-  --color-text-dark: #1c1c1c;
-  --color-btn-text: white;
-  --color-bg-divider: black;
-
-  --card-bg: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
-  --card-shadow-inset: rgba(0, 0, 0, 0.05);
-  --card-shadow-outer: rgba(0, 0, 0, 0.1);
-
-  --toggle-track: #e0e0e0;
-  --toggle-track-inset: rgba(0, 0, 0, 0.1);
-  --toggle-thumb: #ffffff;
-  --toggle-thumb-shadow: rgba(0, 0, 0, 0.2);
-
-  --hamburger-bg: rgba(255, 255, 255, 0.75);
-
-  --font-serif: "DM Serif Text", serif;
-  --font-sans: "Funnel Display", sans-serif;
+/* Dark-only theme. Token names are unchanged so existing components keep
+   working while they are migrated; values are remapped to the dark palette. */
+@theme static {
+  --color-primary: #0a0c10;
+  --color-surface: #10141b;
+  --color-line: #1f2733;
+  --color-muted: #8a93a3;
+  --color-accent: #5eead4;
+  --color-secondary: #5eead4;
+  --color-contrast: #99f6e4;
+  --color-sidebar: #0a0c10;
+  --color-text: #e8eaee;
+  --color-text-light: #e8eaee;
+  --color-text-dark: #04120f;
+  --color-btn-text: #04120f;
+  --color-bg-divider: #1f2733;
 }
 
-:root[data-theme="dark"] {
-  --color-primary: #1a1a1d;
-  --color-secondary: #3dc2ec;
-  --color-accent: #eb3678;
-  --color-contrast: #ffcc00;
-  --color-sidebar: #222831;
-  --color-text: #fffbde;
-  --color-text-light: #fffbde;
-  --color-text-dark: #1c1c1c;
-  --color-btn-text: black;
-  --color-bg-divider: white;
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
 
-  --card-bg: linear-gradient(180deg, #222831 0%, #222831 100%);
-  --card-shadow-inset: rgba(255, 255, 255, 0.09);
-  --card-shadow-outer: rgba(0, 0, 0, 0.2);
-
-  --toggle-track: #393e46;
-  --toggle-track-inset: rgba(0, 0, 0, 0.5);
-  --toggle-thumb: #222831;
-  --toggle-thumb-shadow: rgba(0, 0, 0, 0.4);
-
-  --hamburger-bg: rgba(30, 35, 45, 0.75);
+:root {
+  color-scheme: dark;
+  --card-bg: var(--color-surface);
+  --glow: color-mix(in srgb, var(--color-accent) 22%, transparent);
 }
 
 @layer base {
-  html,
-  body {
-    background-color: var(--color-primary) !important;
-    color: var(--color-text) !important;
+  html {
     scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-primary);
+    background-image:
+      linear-gradient(rgb(255 255 255 / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(255 255 255 / 0.03) 1px, transparent 1px);
+    background-size: 44px 44px;
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
   }
 
   h1,
@@ -67,22 +51,14 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-serif);
+    font-family: var(--font-mono);
+    font-weight: 500;
+    letter-spacing: -0.03em;
   }
-
-  div,
-  p {
-    font-family: var(--font-sans);
-    font-weight: 600;
-  }
-}
-
-#about {
-  height: 100vh;
 }
 
 .sidebar {
-  border-right: 3px solid black;
+  border-right: 1px solid var(--color-line);
 }
 
 .link {
@@ -102,61 +78,49 @@
 }
 
 span.tag {
+  font-family: var(--font-mono);
   font-size: 0.75rem;
-  font-weight: bold;
-  padding: 0.2rem 0.4rem;
+  font-weight: 500;
+  padding: 0.2rem 0.55rem;
   border-radius: 999px;
-  border: 2px solid var(--color-secondary);
-  color: var(--color-secondary);
+  border: 1px solid var(--color-line);
+  color: var(--color-accent);
 }
 
 span.tag-lg {
-  font-size: 1rem;
-  padding: 0.3rem 0.7rem;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.8rem;
 }
 
 .popout {
-  border: 3px solid black;
-  border-radius: 4px;
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
 }
 
 .popout-btn {
-  padding: 8px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 1024px) {
-  #about {
-    padding-top: 0;
-    padding-bottom: 0;
-    height: calc(100vh - 94px);
-  }
+  padding: 8px 16px;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
 }
 
 @media screen and (hover: hover) and (pointer: fine) {
   .popout {
-    box-shadow: none;
-    cursor: pointer !important;
+    cursor: pointer;
     transition:
-      transform 150ms ease-in-out,
-      box-shadow 150ms linear,
-      filter 150ms linear;
+      transform 150ms ease,
+      box-shadow 150ms ease,
+      border-color 150ms ease;
   }
 
   .popout:hover {
-    box-shadow: 6px 6px black;
-    transform: translate(-6px, -6px);
+    transform: translateY(-3px);
+    border-color: var(--color-accent);
+    box-shadow: 0 0 28px var(--glow);
   }
 
   .popout:active {
-    box-shadow: inset 1px 1px black;
-    transform: translate(0);
-  }
-
-  .popout-noclick:active {
-    box-shadow: 6px 6px black;
-    transform: translate(-6px, -6px);
+    transform: none;
   }
 
   .popout-btn {
@@ -170,18 +134,6 @@ span.tag-lg {
 }
 
 @media screen and (hover: none) and (pointer: coarse) {
-  .popout {
-    background-color: var(--color-bg, white);
-    transition: none;
-    box-shadow: 6px 6px black;
-    transform: translate(-6px, -6px);
-  }
-
-  .popout:active {
-    box-shadow: inset 1px 1px black;
-    transform: translate(0);
-  }
-
   .popout-btn {
     background-color: var(--color-accent);
     color: var(--color-btn-text);

@@ -1,7 +1,6 @@
 "use client";
 
 import DevName from "@/components/ui/dev-name/DevName";
-import ThemeToggle from "@/components/ui/theme-toggle/ThemeToggle";
 import { projects } from "@/lib/data";
 import { useParams } from "next/navigation";
 import { ProjectHeader } from "../components/ProjectHeader";
@@ -38,9 +37,6 @@ export default function ProjectPage() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-sidebar border border-b-2 border-black">
         <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between relative">
           <DevName />
-          <div className="max-md:hidden">
-            <ThemeToggle />
-          </div>
           <div className="md:hidden relative top-0 left-0">
             <HamburgerMenu />
           </div>

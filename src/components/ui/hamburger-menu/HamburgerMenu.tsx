@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import LinkShelf from "../link-shelf/LinkShelf";
-import ThemeToggle from "../theme-toggle/ThemeToggle";
 import "./HamburgerMenu.css";
 import { HamburgerIcon, X } from "lucide-react";
 import { useScrollLock } from "@/hooks/useScrollLock";
@@ -39,8 +38,6 @@ export default function HamburgerMenu() {
         >
           <X width="30" height="30" />
         </button>
-
-        <ThemeToggle />
         <LinkShelf />
       </nav>
     </>

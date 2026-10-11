@@ -1,20 +1,17 @@
-"use client";
-import About from "@/components/sections/about/About";
-import Work from "@/components/sections/work/Work";
-import Skills from "@/components/sections/skills/Skills";
+import Hero from "@/components/sections/hero/Hero";
 import Projects from "@/components/sections/projects/Projects";
-import Contact from "@/components/sections/contact/Contact";
-import { usePageView } from "@/lib/analytics/hooks";
+import Experience from "@/components/sections/experience/Experience";
+import PageView from "@/components/ui/page-view/PageView";
+import Toolbox from "@/components/sections/toolbox/Toolbox";
 
 export default function Home() {
-  usePageView();
   return (
     <>
-      <About />
-      <Skills />
-      <Work />
+      <PageView />
+      <Hero />
       <Projects />
-      <Contact />
+      <Experience />
+      <Toolbox />
     </>
   );
 }

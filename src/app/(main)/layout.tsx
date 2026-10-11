@@ -1,5 +1,5 @@
 import "@/app/globals.css";
-import Sidebar from "@/components/ui/sidebar/Sidebar";
+import { inter, jetbrainsMono } from "@/app/fonts";
 
 export const metadata = {
   title: "Travis Adams | Builder of Things",
@@ -12,10 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="min-h-screen">
         <div className="flex max-lg:flex-col">
-          <Sidebar />
           <main className="flex-1 overflow-y-auto">{children}</main>
         </div>
       </body>
