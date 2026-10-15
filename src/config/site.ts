@@ -7,5 +7,10 @@ export const site = {
   // TODO: set this to your real resume file in /public (e.g. "/Travis-Adams-Resume.pdf")
   resume: "/resume.pdf",
   // Slugs from src/lib/data.ts shown as large cards. Everything else becomes a pill.
-  featuredSlugs: ["bahasa-builder", "move-mentor", "bazaar", "meyer-online"],
+  featuredSlugs: [
+    "bahasa-builder",
+    "move-mentor",
+    "omni-outdoor-living",
+    "meyer-online",
+  ],
 };
