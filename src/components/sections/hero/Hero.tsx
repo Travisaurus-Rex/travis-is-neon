@@ -21,7 +21,7 @@ export default function Hero() {
         </h1>
         <p className="mb-4 max-w-[52ch] text-lg leading-relaxed text-muted">
           I build web applications that look good, work well, and solve real
-          problems. With {yoe}+ years of experience across the stack, I've
+          problems. With {yoe}+ years of experience across the stack, I have
           worked on everything from polished interfaces and complex business
           systems to emerging AI-powered applications.
         </p>
