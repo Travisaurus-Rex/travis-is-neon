@@ -38,18 +38,26 @@ const cards: Card[] = [
       "AI agents",
     ],
     highlight: true,
-    link: { href: "/projects/bahasa-builder", label: "See it in Bahasa Builder" },
+    link: {
+      href: "/projects/bahasa-builder",
+      label: "See it in Bahasa Builder",
+    },
   },
   {
     title: "Agency and CMS",
     blurb: "Fast, editable sites for clients.",
-    skills: ["PHP", "GraphQL", "Performance and SEO", "Responsive UI"],
-    learning: ["Headless WordPress", "Headless CMS"],
+    skills: [
+      "PHP",
+      "GraphQL",
+      "Performance and SEO",
+      "Responsive UI",
+      "Strapi CMS",
+      "Headless WordPress",
+    ],
   },
 ];
 
-const chip =
-  "rounded-full border px-2.5 py-1 font-mono text-xs";
+const chip = "rounded-full border px-2.5 py-1 font-mono text-xs";
 
 export default function Toolbox() {
   return (
