@@ -36,13 +36,15 @@ export default function Hero() {
           >
             View work
           </Link>
-          <OutboundLink
-            href={site.resume}
-            target="_blank"
-            className={`${btn} border-line`}
-          >
-            Resume
-          </OutboundLink>
+          {false && (
+            <OutboundLink
+              href={site.resume}
+              target="_blank"
+              className={`${btn} border-line`}
+            >
+              Resume
+            </OutboundLink>
+          )}
           <OutboundLink
             href={`mailto:${site.email}`}
             className={`${btn} border-line`}

@@ -14,9 +14,15 @@ export default function SiteFooter() {
           <OutboundLink href={`mailto:${site.email}`} className={linkClass}>
             Email
           </OutboundLink>
-          <OutboundLink href={site.resume} target="_blank" className={linkClass}>
-            Resume
-          </OutboundLink>
+          {false && (
+            <OutboundLink
+              href={site.resume}
+              target="_blank"
+              className={linkClass}
+            >
+              Resume
+            </OutboundLink>
+          )}
           <OutboundLink href={site.github} className={linkClass}>
             GitHub
           </OutboundLink>
