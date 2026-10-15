@@ -20,10 +20,10 @@ export default function Hero() {
           Travis Adams
         </h1>
         <p className="mb-4 max-w-[52ch] text-lg leading-relaxed text-muted">
-          {yoe}+ years turning big, messy data into business apps people
-          actually like using. Frontend is my strength, but I am comfortable
-          across the full stack, and I have worked with digital agencies and
-          clients around the world.
+          I build web applications that look good, work well, and solve real
+          problems. With {yoe}+ years of experience across the stack, I've
+          worked on everything from polished interfaces and complex business
+          systems to emerging AI-powered applications.
         </p>
         <p className="mb-7 flex items-center gap-2 text-sm">
           <span className="inline-block size-2 rounded-full bg-emerald-400" />
