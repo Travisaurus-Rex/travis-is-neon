@@ -3,6 +3,7 @@ import Link from "next/link";
 import { projects } from "@/lib/data";
 import { site } from "@/config/site";
 import type { Project } from "@/models/project";
+import LaunchKitFeatured from "./LaunchKitFeatured";
 
 function Card({ project }: { project: Project }) {
   const img = project.images.thumbnail || project.images.mainDesktop;
@@ -51,6 +52,8 @@ export default function Projects() {
       <h2 className="mb-9 text-[clamp(1.9rem,4vw,3rem)] leading-none">
         Selected work
       </h2>
+
+      <LaunchKitFeatured />
 
       <div className="grid gap-6 md:grid-cols-2">
         {featured.map((project) => (
