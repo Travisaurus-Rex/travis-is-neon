@@ -62,7 +62,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="relative mx-auto aspect-square w-full max-w-[340px] overflow-hidden rounded-full border border-accent shadow-[0_0_60px_rgba(94,234,212,0.19)]">
+      <div className="relative mx-auto aspect-square w-full max-w-[340px] overflow-hidden rounded-full border border-2 border-accent shadow-[0_0_60px_rgba(94,234,212,0.19)]">
         <Image
           src="/travis.jpg"
           alt="Travis Adams"

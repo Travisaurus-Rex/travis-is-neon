@@ -25,7 +25,7 @@ export default function SiteFooter() {
           </div>
           <OutboundLink
             href={REPO_URL}
-            className="inline-block rounded-[10px] border border-accent bg-accent px-5 py-3 text-[15px] font-semibold text-btn-text transition hover:-translate-y-0.5 hover:shadow-[0_0_24px_rgba(94,234,212,0.33)]"
+            className="inline-block rounded-[10px] border border-accent bg-accent px-5 py-3 text-[15px] font-semibold text-btn-text transition hover:-translate-y-0.5 hover:shadow-[0_0_24px_rgba(234,173,94,0.33)]"
           >
             View the repo &rarr;
           </OutboundLink>

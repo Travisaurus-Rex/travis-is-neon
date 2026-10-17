@@ -586,7 +586,7 @@ export default function LaunchKitPage() {
       {/* Engineering */}
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <SectionHeading
-          eyebrow="06 / Engineering"
+          eyebrow="05 / Engineering"
           title="The details behind the experience."
         />
 
