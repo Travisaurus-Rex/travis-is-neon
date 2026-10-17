@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const launchkit = {
-  live: "https://YOUR-LAUNCHKIT-APP.vercel.app",
-  github: "https://github.com/YOUR-USERNAME/YOUR-REPO",
+  live: "https://launchkit-ebon.vercel.app/",
+  github: "https://github.com/Travisaurus-Rex/launchkit",
 
   images: {
     nova: "https://res.cloudinary.com/swtmnaod/image/upload/v1792154012/launchkit/nova_full_d2b659af7a_hlvi0a.png",
@@ -12,7 +12,6 @@ const launchkit = {
     hearth:
       "https://res.cloudinary.com/swtmnaod/image/upload/v1792154077/launchkit/local_full_429a539192_m3honk.png",
     customizer: "/projects/launchkit/customizer.png",
-    exportPreview: "",
   },
 };
 
